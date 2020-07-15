@@ -107,3 +107,15 @@ var diaSemana =
     : 'Dia inválido';
 
 console.log(diaSemana);
+
+/* Somatório com while */
+
+var numAtual = 1;
+var somatorio = 0;
+
+while (numAtual <= 10) {
+  somatorio += numAtual;
+  numAtual++;
+}
+
+console.log('A soma é ' + somatorio);
