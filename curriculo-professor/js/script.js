@@ -1,7 +1,7 @@
-/* Initial Console */
+// Initial Console
 console.log('Hello World!');
 
-/* Change the 'H1' Curriculum Title */
+// Change the 'H1' Curriculum Title
 var title = document.querySelector('h1');
 title.textContent = 'O título do Raphael Gomes foi modificado por Jardel Cunha';
 
@@ -76,3 +76,34 @@ switch (dia) {
 }
 
 console.log(r);
+
+/* Ternary Operator initial */
+
+a = 8;
+b = 7;
+
+var resposta = a > b ? 'maior' : a < b ? 'menor' : 'igual';
+console.log(resposta);
+
+/* Ternary Operator more complex */
+
+dia = 6;
+
+var diaSemana =
+  dia === 1
+    ? 'Domingo'
+    : dia === 2
+    ? 'Segunda'
+    : dia === 3
+    ? 'Terça'
+    : dia === 4
+    ? 'Quarta'
+    : dia === 5
+    ? 'Quinta'
+    : dia === 6
+    ? 'Sexta'
+    : dia === 7
+    ? 'Sábado'
+    : 'Dia inválido';
+
+console.log(diaSemana);
