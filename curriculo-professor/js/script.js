@@ -119,3 +119,15 @@ while (numAtual <= 10) {
 }
 
 console.log('A soma é ' + somatorio);
+
+/* Somatório com do-while */
+
+var numAtual = 1;
+var somatorio = 0;
+
+do {
+  somatorio += numAtual;
+  numAtual++;
+} while (numAtual <= 20);
+
+console.log('A soma é ' + somatorio);
