@@ -108,7 +108,7 @@ var diaSemana =
 
 console.log(diaSemana);
 
-/* Somatório com WHILE */
+/* Summation with WHILE */
 
 var numAtual = 1;
 var somatorio = 0;
@@ -120,7 +120,7 @@ while (numAtual <= 10) {
 
 console.log('O somatório com "while" é ' + somatorio);
 
-/* Somatório com DO-WHILE */
+/* Summation with DO-WHILE */
 
 var numAtual = 1;
 var somatorio = 0;
@@ -132,7 +132,7 @@ do {
 
 console.log('O somatório com "do-while" é ' + somatorio);
 
-/* Somatório com FOR */
+/* Summation with FOR */
 
 somatorio = 0;
 
