@@ -78,7 +78,6 @@ switch (dia) {
 console.log(r);
 
 /* Ternary Operator initial */
-
 a = 8;
 b = 7;
 
@@ -86,7 +85,6 @@ var resposta = a > b ? 'maior' : a < b ? 'menor' : 'igual';
 console.log(resposta);
 
 /* Ternary Operator more complex */
-
 dia = 6;
 
 var diaSemana =
@@ -108,8 +106,7 @@ var diaSemana =
 
 console.log(diaSemana);
 
-/* Summation with WHILE */
-
+/* Sum with WHILE */
 var numAtual = 1;
 var somatorio = 0;
 
@@ -120,8 +117,7 @@ while (numAtual <= 10) {
 
 console.log('O somatório com "while" é ' + somatorio);
 
-/* Summation with DO-WHILE */
-
+/* Sum with DO-WHILE */
 var numAtual = 1;
 var somatorio = 0;
 
@@ -133,7 +129,6 @@ do {
 console.log('O somatório com "do-while" é ' + somatorio);
 
 /* Summation with FOR */
-
 somatorio = 0;
 
 for (numAtual = 1; numAtual <= 10; numAtual++) {
