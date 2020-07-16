@@ -136,3 +136,8 @@ for (numAtual = 1; numAtual <= 10; numAtual++) {
 }
 
 console.log('O somatório com "for" é ' + somatorio);
+
+/* Changing Title */
+
+var title = document.querySelector('h1');
+title.textContent = 'Raphael Gomide';
