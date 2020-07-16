@@ -10,3 +10,19 @@ console.log(personalData);
 var personalData = document.querySelectorAll('li');
 personalData = Array.from(personalData);
 console.log(personalData);
+
+/* Summary of Query Selector All  with Array.From */
+var div = Array.from(document.querySelectorAll('div'));
+console.log(div);
+
+/* Change color of li */
+var li = Array.from(document.querySelectorAll('.customli'));
+for (var i = 0; i < li.length; i++) {
+  var teste = li[i];
+  teste.style.color = 'blue';
+}
+
+for (var i = 0; i < li.length; i++) {
+  var currentElement = li[i];
+  currentElement.classList.add('emphasis');
+}
