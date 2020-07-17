@@ -4,18 +4,18 @@ Aplicações sendo desenvolvidas nas aulas de Desenvolvimento Full Stack como MB
 
 Tópicos:
 
-- Facilidades Visual Studio Code
+- Utilidades e comandos no Visual Studio Code
 - Introdução ao Node.js
 - Introdução ao NPM e à biblioteca live-server
 - Introdução ao HTML
 - Aplicação em HTML
 - Introdução em CSS
 - Aplicação em CSS
-- Introdução ao Javascrip
-- Aplicação em Javascrip
+- Introdução ao Javascript
+- Aplicação em Javascript
 - Comandos de bloco
 - Aplicação de console.log
 - Manipulando DOM com Javascript
 - Formulários HTML
 - Manipulação de eventos em Javascript
-- CRUD com HTML, CSS e Javascript
+- CRUD em HTML, CSS e Javascript
