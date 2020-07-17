@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Cadastro de nomes</h1>
-    <form>
-      <label id="inputName">
-        Nome:
-        <input type="text" id="inputName" placeholder="Informe um nome aqui" />
-      </label>
+    <div id="divH1">
+      <h1>Cadastro de nomes</h1>
+    </div>
+
+    <form id="formName">
+      <div id="divName">
+        <label>
+          Nome:
+          <input
+            type="text"
+            id="inputName"
+            placeholder="Informe um nome aqui"
+          />
+        </label>
+      </div>
     </form>
 
-    <br />
+    <div id="divH2">
+      <h2>Nomes cadastrados até o momento</h2>
+    </div>
 
-    <h2 id="h2">Nomes cadastrados até o momento</h2>
     <div id="names"></div>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

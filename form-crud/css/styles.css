@@ -1,7 +1,15 @@
-#inputName {
-  margin-left: 1rem;
+#divH1,
+#divH2,
+#divName {
+  text-align: center;
 }
 
-#h2 {
-  text-align: center;
+#divName {
+  margin-left: 2rem;
+  margin-top: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#inputName {
+  margin-left: 0.5rem;
 }
