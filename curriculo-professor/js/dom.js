@@ -31,3 +31,4 @@ for (var i = 0; i < li.length; i++) {
 /* Add class of table */
 var h1 = document.querySelector('table');
 h1.classList.add('table-custom');
+// Also can be use 'classList.remove'
