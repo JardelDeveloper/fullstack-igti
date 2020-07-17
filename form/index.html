@@ -6,7 +6,31 @@
     <title>Formulário</title>
   </head>
   <body>
-    <form></form>
+    <form>
+      <p>
+        <textarea id="textarea" cols="22" rows="5">Conteúdo</textarea>
+      </p>
+      <p>
+        <input type="text" id="idName" placeholder="Informe o seu nome" />
+      </p>
+      <p>
+        <input type="email" id="idEmail" placeholder="Informe o seu email" />
+      </p>
+      <p>
+        <input type="date" id="idDate" placeholder="Informe o seu email" />
+      </p>
+      <p>
+        <input type="checkbox" id="idCheckbox" checked />
+        Rock
+      </p>
+      <p>
+        <input type="radio" id="idOptionYes" name="option" checked />
+        Sim
+        <input type="radio" id="idOptionNo" name="option" />
+        Não
+      </p>
+      <input type="submit" value="Enviar" id="idSubmit" />
+    </form>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
