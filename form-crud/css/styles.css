@@ -13,3 +13,19 @@
 #inputName {
   margin-left: 0.5rem;
 }
+
+ul,
+li {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 5.4rem;
+  margin-top: 0.5rem;
+}
+
+.deleteButton {
+  color: white;
+  font-weight: bold;
+  background-color: darkred;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
