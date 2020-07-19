@@ -57,11 +57,17 @@ function render() {
     var button = document.createElement('button');
     button.classList.add('deleteButton');
     button.textContent = 'x';
-
     button.addEventListener('click', deleteName);
-
     return button;
   }
+
+  function createSpan(name) {
+    var span = document.createElement('span');
+    span.classList.add('clickable');
+    span.textContent = name;
+    return span;
+  }
+
   var divNames = document.querySelector('#names');
   divNames.innerHTML = '';
   // divNames.innerHTML = '<ul><li>Nome 1</li><li>Nome 2</li></ul>';
@@ -69,24 +75,16 @@ function render() {
   // Create ul
   // Make n li's, according the size of globalNames
   var ul = document.createElement('ul');
-  // var li1 = document.createElement('li');
-  // var li2 = document.createElement('li');
-  // li1.textContent = 'Primeiro';
-  // li2.textContent = 'Segundo';
-  // ul.appendChild(li1);
-  // ul.appendChild(li2);
+
   for (i = 0; i < globalNames.length; i++) {
     var currentName = globalNames[i];
 
     var li = document.createElement('li');
     var button = createDeleteButton(i);
-
-    var span = document.createElement('span');
-    span.textContent = currentName;
+    var span = createSpan(currentName);
 
     li.appendChild(button);
     li.appendChild(span);
-    // li.textContent = currentName;
     ul.appendChild(li);
   }
 

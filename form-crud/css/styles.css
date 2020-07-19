@@ -17,9 +17,12 @@
 ul,
 li {
   list-style-type: none;
-  text-align: center;
-  margin-right: 5.4rem;
   margin-top: 0.5rem;
+  margin-left: 18rem;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 .deleteButton {
@@ -28,8 +31,4 @@ li {
   background-color: darkred;
   margin-right: 0.5rem;
   border-radius: 50%;
-}
-
-.clickable {
-  cursor: pointer;
 }
