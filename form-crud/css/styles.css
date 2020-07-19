@@ -29,3 +29,7 @@ li {
   margin-right: 0.5rem;
   border-radius: 50%;
 }
+
+.clickable {
+  cursor: pointer;
+}
