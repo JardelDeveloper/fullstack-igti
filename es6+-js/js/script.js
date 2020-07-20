@@ -73,6 +73,7 @@ const text2 = `Meu nome é ${name} ${surName}`;
 console.log(text1);
 console.log(text2);
 
+// default parameters
 const sum5 = (a, b = 10) => a + b;
 console.log(sum5(2));
 console.log(sum5(2, 8));
