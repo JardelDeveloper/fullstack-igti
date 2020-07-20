@@ -19,3 +19,4 @@ Tópicos:
 - Formulários HTML
 - Manipulação de eventos em Javascript
 - CRUD em HTML, CSS e Javascript
+- Introdução ao Javascript moderno ES6+ (ECMASprit)
