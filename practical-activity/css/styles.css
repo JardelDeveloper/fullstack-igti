@@ -5,6 +5,7 @@ body {
 
 #title {
   margin-bottom: 0rem;
+  text-align: center;
 }
 
 .pCustom {
@@ -28,14 +29,15 @@ body {
 
 #buttons {
   margin-top: 0.3rem;
+  margin-left: 4rem;
 }
 
 .buttonCustom {
   background-color: #188ec5;
-  height: 3rem;
-  width: 5rem;
-  /* border-radius: 35%; */
+  height: 3.4rem;
+  width: 5.6rem;
+  border-radius: 36%;
   border: 1px solid #188ec5;
   font-weight: bold;
-  margin: 0.4rem;
+  margin-left: 0.5rem;
 }

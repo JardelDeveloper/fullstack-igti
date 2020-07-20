@@ -12,30 +12,51 @@
   </head>
   <body>
     <div id="title">
-      <h1>Cálculo média dos alunos</h1>
+      <h1>Você pode votar?</h1>
     </div>
     <form>
       <div id="diName">
         <p class="pCustom">
           <label for="inputName">
-            Qual é o seu nome?
-            <input type="text" id="inputName" class="inputCustom" />
+            Nome:
+            <input
+              type="text"
+              id="inputName"
+              class="inputCustom"
+              placeholder="Informe o seu nome"
+            />
           </label>
         </p>
       </div>
       <div id="divYear">
         <p class="pTeste">
           <label for="inputYear">
-            Qual seu ano de nascimento?
-            <input type="text" id="inputYear" class="inputCustom" />
+            Ano de nascimento:
+            <input
+              type="number"
+              id="inputYear"
+              class="inputCustom"
+              value=""
+              placeholder="Informe o ano"
+            />
           </label>
         </p>
         <p id="textYearly"></p>
       </div>
       <div id="buttons">
         <label for="inputButton">
-          <input type="reset" class="buttonCustom" value="Apagar" />
-          <input type="submit" class="buttonCustom" value="Calcular" />
+          <input
+            type="reset"
+            class="buttonCustom"
+            value="APAGAR"
+            id="buttonReset"
+          />
+          <input
+            type="submit"
+            class="buttonCustom"
+            value="CALCULAR"
+            id="buttonCalc"
+          />
         </label>
       </div>
     </form>
