@@ -1,13 +1,12 @@
 window.addEventListener('load', start);
 
 function start() {
-  console.log('start');
-
   var inputYear = document.querySelector('#inputYear');
   var buttonCalc = document.querySelector('#buttonCalc');
   inputYear.addEventListener('click', showYear);
   buttonCalc.addEventListener('click', calc);
 
+  showYear();
   activateInput();
 }
 
@@ -18,18 +17,24 @@ function showYear() {
   var yearly = new Date().getFullYear();
 
   textYearly.textContent = 'Ano atual: ' + yearly;
-  console.log(yearly);
 
   function handleYear(event) {
-    var total = event.target.value;
-    teste = yearly - total;
+    var yearPerson = event.target.value;
+    totalYear = yearly - yearPerson;
   }
 
   inputYear.addEventListener('keyup', handleYear);
 }
 
 function calc() {
-  alert(inputName.value + ' , você tem ' + teste + ' anos');
+  if (totalYear < 16) {
+    alert(inputName.value + ' , você ainda não tem idade para votar');
+  } else if (totalYear >= 18 && totalYear < 70) {
+    alert(inputName.value + ' , o seu voto é obrigatório');
+  } else {
+    alert(inputName.value + ' , o seu voto é facultativo');
+  }
+
   showYear();
   handleYear();
 }
