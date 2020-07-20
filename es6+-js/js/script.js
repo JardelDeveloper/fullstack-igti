@@ -39,3 +39,26 @@ console.log(d);
 
 d.push(1);
 console.log(d);
+
+function sum(a, b) {
+  return a + b;
+}
+
+// anonymous function
+const sum2 = function (a, b) {
+  return a + b;
+};
+
+// arrow function
+const sum3 = (a, b) => {
+  return a + b;
+};
+
+// arrow function reduced
+const sum4 = (a, b) => a + b;
+
+// test of console
+console.log(sum(2, 3));
+console.log(sum2(2, 3));
+console.log(sum3(2, 3));
+console.log(sum4(2, 3));
