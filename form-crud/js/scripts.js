@@ -4,6 +4,8 @@ window.addEventListener('load', start);
 // Definition of a global variable
 var globalNames = [];
 var inputName = null;
+var currentIndex = null;
+var isEditing = false;
 
 // Getting inputName and declaring other functions
 function start() {
@@ -29,16 +31,33 @@ function activateInput() {
   function insertName(newName) {
     globalNames.push(newName);
     // console.log(globalNames);
-    render();
   }
+
+  function updateName(newName) {
+    globalNames[currentIndex] = newName;
+  }
+
   function handleTyping(event) {
     // console.log(event);
+    var hasText = !!event.target.value && event.target.value.trim() !== '';
+
+    if (!hasText) {
+      clearInput();
+      return;
+    }
+
     if (event.key === 'Enter') {
-      // console.log('Enter');
-      // console.log(event.target.value);
-      insertName(event.target.value);
-      // var typedName = event.target.value;
-      // globalNames.push(typedName);
+      if (isEditing) {
+        console.log('Editing...');
+        updateName(event.target.value);
+      } else {
+        console.log('Inserting...');
+        insertName(event.target.value);
+      }
+
+      render();
+      isEditing = false;
+      clearInput();
     }
   }
 
@@ -61,10 +80,19 @@ function render() {
     return button;
   }
 
-  function createSpan(name) {
+  // Edit item
+  function createSpan(name, index) {
+    function editItem() {
+      inputName.value = name;
+      inputName.focus();
+      isEditing = true;
+      currentIndex = index;
+    }
     var span = document.createElement('span');
     span.classList.add('clickable');
     span.textContent = name;
+    span.addEventListener('click', editItem);
+
     return span;
   }
 
@@ -81,7 +109,7 @@ function render() {
 
     var li = document.createElement('li');
     var button = createDeleteButton(i);
-    var span = createSpan(currentName);
+    var span = createSpan(currentName, i);
 
     li.appendChild(button);
     li.appendChild(span);
