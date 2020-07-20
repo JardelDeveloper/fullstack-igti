@@ -62,3 +62,17 @@ console.log(sum(2, 3));
 console.log(sum2(2, 3));
 console.log(sum3(2, 3));
 console.log(sum4(2, 3));
+
+// template literals
+
+const name = 'Raphael';
+const surName = 'Gomide';
+const text1 = 'Meu nome é ' + name + ' ' + surName;
+const text2 = `Meu nome é ${name} ${surName}`;
+
+console.log(text1);
+console.log(text2);
+
+const sum5 = (a, b = 10) => a + b;
+console.log(sum5(2));
+console.log(sum5(2, 8));
