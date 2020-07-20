@@ -77,3 +77,5 @@ console.log(text2);
 const sum5 = (a, b = 10) => a + b;
 console.log(sum5(2));
 console.log(sum5(2, 8));
+
+console.log(people);
