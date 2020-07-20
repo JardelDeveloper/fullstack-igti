@@ -4,8 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practical Activity</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="title">
+      <h1>Cálculo média dos alunos</h1>
+    </div>
+    <form>
+      <div id="diName">
+        <p class="pCustom">
+          <label for="inputName">
+            Qual é o seu nome?
+            <input type="text" id="inputName" class="inputCustom" />
+          </label>
+        </p>
+      </div>
+      <div id="divYear">
+        <p class="pTeste">
+          <label for="inputYear">
+            Qual seu ano de nascimento?
+            <input type="text" id="inputYear" class="inputCustom" />
+          </label>
+        </p>
+        <p id="textYearly"></p>
+      </div>
+      <div id="buttons">
+        <label for="inputButton">
+          <input type="reset" class="buttonCustom" value="Apagar" />
+          <input type="submit" class="buttonCustom" value="Calcular" />
+        </label>
+      </div>
+    </form>
+  </body>
   <script src="./js/scripts.js"></script>
 </html>
