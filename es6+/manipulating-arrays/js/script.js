@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   doMap();
-  // doFilter();
+  doFilter();
 });
 
 function doMap() {
@@ -14,3 +14,11 @@ function doMap() {
   console.log(nameEmailArray);
 }
 // console.log(people);
+
+function doFilter() {
+  const olderThan50 = people.results.filter((person) => {
+    return person.dob.age > 50;
+  });
+
+  console.log(olderThan50);
+}
