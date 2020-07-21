@@ -19,5 +19,11 @@ Tópicos:
 - Formulários HTML
 - Manipulação de eventos em Javascript
 - CRUD em HTML, CSS e Javascript
-- Introdução ao Javascript moderno ES6+ (ECMASprit)
+- Introdução ao Javascript moderno ES6+
 - Manipulação de arrays com ES6+
+- Operador ...e destructuring
+- Refatorando o projeto do CRUD
+- Programação Assíncrona com Javascript
+- Funções setTimeout e setInterval
+- Requisições HTTP com Javascript
+- Desafios finais
