@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
   doForEach();
   doReduce();
   doFind();
+  doSome();
 });
 
 // transform the array in object with name and email
@@ -77,4 +78,13 @@ function doFind() {
   });
 
   console.log(foundHer);
+}
+
+// verify if there are any user that live in 'Amazonas'
+function doSome() {
+  const found = people.results.some((person) => {
+    return person.location.state === 'Amazonas';
+  });
+
+  console.log(found);
 }
