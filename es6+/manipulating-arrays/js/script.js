@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
   doReduce();
   doFind();
   doSome();
+  doEvery();
 });
 
 // transform the array in object with name and email
@@ -87,4 +88,13 @@ function doSome() {
   });
 
   console.log(found);
+}
+
+// verify if all users with 'nat' equal 'US'
+function doEvery() {
+  const every = people.results.every((person) => {
+    return person.nat === 'US';
+  });
+
+  console.log(every);
 }
