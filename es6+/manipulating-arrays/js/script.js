@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
   doMap();
   doFilter();
+  doForEach();
 });
 
 function doMap() {
@@ -12,6 +13,8 @@ function doMap() {
   });
 
   console.log(nameEmailArray);
+
+  return nameEmailArray;
 }
 // console.log(people);
 
@@ -21,4 +24,19 @@ function doFilter() {
   });
 
   console.log(olderThan50);
+}
+
+function doForEach() {
+  const mappedPeople = doMap();
+  // console.log('map');
+  // console.log(mappedPeople);
+
+  mappedPeople.forEach((person) => {
+    person.nameSize =
+      person.name.title.length +
+      person.name.first.length +
+      person.name.last.length;
+  });
+
+  console.log(mappedPeople);
 }
