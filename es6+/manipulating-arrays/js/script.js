@@ -1,3 +1,4 @@
+// load all functions
 window.addEventListener('load', () => {
   doMap();
   doFilter();
@@ -6,6 +7,7 @@ window.addEventListener('load', () => {
   doFind();
 });
 
+// transform the array in object with name and email
 function doMap() {
   const nameEmailArray = people.results.map((person) => {
     return {
@@ -20,6 +22,7 @@ function doMap() {
 }
 // console.log(people);
 
+// filter all people older than 50 years
 function doFilter() {
   const olderThan50 = people.results.filter((person) => {
     return person.dob.age > 50;
@@ -28,6 +31,7 @@ function doFilter() {
   console.log(olderThan50);
 }
 
+// include new property in object
 function doForEach() {
   const mappedPeople = doMap();
   // console.log('map');
@@ -43,6 +47,7 @@ function doForEach() {
   console.log(mappedPeople);
 }
 
+// sum all ages of people
 function doReduce() {
   const totalAges = people.results.reduce((accumulator, current) => {
     return accumulator + current.dob.age;
@@ -59,6 +64,7 @@ function doReduce() {
   // console.log(sumAges);
 }
 
+// find first user that live in 'Minas Gerais' city and after, find the first person with sex 'female'
 function doFind() {
   const found = people.results.find((person) => {
     return person.location.state === 'Minas Gerais';
