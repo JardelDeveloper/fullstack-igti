@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
   doFilter();
   doForEach();
   doReduce();
+  doFind();
 });
 
 function doMap() {
@@ -56,4 +57,18 @@ function doReduce() {
   // }
 
   // console.log(sumAges);
+}
+
+function doFind() {
+  const found = people.results.find((person) => {
+    return person.location.state === 'Minas Gerais';
+  });
+
+  console.log(found);
+
+  const foundHer = people.results.find((person) => {
+    return person.gender === 'female';
+  });
+
+  console.log(foundHer);
 }
