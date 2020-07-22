@@ -7,6 +7,7 @@ window.addEventListener('load', () => {
   doFind();
   doSome();
   doEvery();
+  doSort();
 });
 
 // transform the array in object with name and email
@@ -66,7 +67,7 @@ function doReduce() {
   // console.log(sumAges);
 }
 
-// find first user that live in 'Minas Gerais' city and after, find the first person with sex 'female'
+// find the first user that lives in 'Minas Gerais' city and then find the first person with 'female' gender
 function doFind() {
   const found = people.results.find((person) => {
     return person.location.state === 'Minas Gerais';
@@ -97,4 +98,24 @@ function doEvery() {
   });
 
   console.log(every);
+}
+
+//
+function doSort() {
+  const mappedNames = people.results
+    .map((person) => {
+      return person.name.first;
+    })
+    .filter((person) => person.startsWith('A'))
+    .sort();
+
+  console.log(mappedNames);
+
+  const mappedNumbers = people.results
+    .map((person) => {
+      return {
+        name: person.name.first,
+      };
+    })
+    .filter((person) => person.name.startsWith('A'));
 }
