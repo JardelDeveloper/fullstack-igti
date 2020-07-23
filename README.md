@@ -21,7 +21,8 @@ Tópicos:
 - CRUD em HTML, CSS e Javascript
 - Introdução ao Javascript moderno ES6+
 - Manipulação de arrays com ES6+
-- Operador ...e destructuring
+- Operador ...(rest/spread)
+- Destructuring
 - Refatorando o projeto do CRUD
 - Programação Assíncrona com Javascript
 - Funções setTimeout e setInterval
