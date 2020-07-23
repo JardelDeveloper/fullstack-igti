@@ -100,7 +100,7 @@ function doEvery() {
   console.log(every);
 }
 
-//
+// order something specific
 function doSort() {
   const mappedNames = people.results
     .map((person) => {
@@ -117,5 +117,11 @@ function doSort() {
         name: person.name.first,
       };
     })
-    .filter((person) => person.name.startsWith('A'));
+    .filter((person) => person.name.startsWith('A'))
+    .sort((a, b) => {
+      // return a.name.localeCompare(b.name);
+      return b.name.length - a.name.length;
+    });
+
+  console.log(mappedNumbers);
 }
