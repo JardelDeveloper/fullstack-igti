@@ -150,5 +150,6 @@ function doRest() {
 }
 
 function infiniteSum(...numbers) {
-  console.log(numbers);
+  // console.log(numbers);
+  return numbers.reduce((acc, curr) => acc + curr, 0);
 }
