@@ -145,6 +145,7 @@ function doSpread() {
   console.log(marriedPeople);
 }
 
+// sum/multiplication infinite
 function doRest() {
   console.log(infiniteSum(1, 2, 3, 6, 100));
 }
