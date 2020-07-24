@@ -146,7 +146,7 @@ function doSpread() {
 }
 
 function doRest() {
-  console.log(infiniteSum(1, 2));
+  console.log(infiniteSum(1, 2, 3, 6, 100));
 }
 
 function infiniteSum(...numbers) {
