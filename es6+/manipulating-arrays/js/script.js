@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
   doEvery();
   doSort();
   doSpread();
+  doRest();
 });
 
 // transform the array in object with name and email
@@ -142,4 +143,12 @@ function doSpread() {
   const marriedPeople = [...marriedMen, ...marriedWomen, { msg: 'Oi' }];
 
   console.log(marriedPeople);
+}
+
+function doRest() {
+  console.log(infiniteSum(1, 2));
+}
+
+function infiniteSum(...numbers) {
+  console.log(numbers);
 }
