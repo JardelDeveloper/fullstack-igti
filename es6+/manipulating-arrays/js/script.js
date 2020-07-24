@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
   doSort();
   doSpread();
   doRest();
+  doDestructuring();
 });
 
 // transform the array in object with name and email
@@ -153,4 +154,19 @@ function doRest() {
 function infiniteSum(...numbers) {
   // console.log(numbers);
   return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+// destructuring - create variable from the object
+function doDestructuring() {
+  const first = people.results[0];
+
+  // repetitive
+  // const username = first.login.username;
+  // const password = first.login.password;
+
+  // using destructuring
+  const { username, password } = first.login;
+
+  console.log(username);
+  console.log(password);
 }
