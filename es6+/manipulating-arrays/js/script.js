@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
   doSome();
   doEvery();
   doSort();
+  doSpread();
 });
 
 // transform the array in object with name and email
@@ -124,4 +125,21 @@ function doSort() {
     });
 
   console.log(mappedNumbers);
+}
+
+// concatenate two objects [Mr + Ms]
+function doSpread() {
+  const marriedMen = people.results.filter(
+    (person) => person.name.title === 'Mr'
+  );
+  const marriedWomen = people.results.filter(
+    (person) => person.name.title === 'Ms'
+  );
+
+  // console.log(marriedMen);
+  // console.log(marriedWomen);
+
+  const marriedPeople = [...marriedMen, ...marriedWomen, { msg: 'Oi' }];
+
+  console.log(marriedPeople);
 }
