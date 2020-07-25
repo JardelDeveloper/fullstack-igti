@@ -27,7 +27,8 @@ function preventFormSubmit() {
 // Activate onfocus in input
 function activateInput() {
   function insertName(newName) {
-    globalNames.push(newName);
+    // globalNames.push(newName);
+    globalNames = [...globalNames, newName];
     // console.log(globalNames);
   }
 
