@@ -67,8 +67,6 @@ function activateInput() {
 function render() {
   function createDeleteButton(index) {
     function deleteName() {
-      // console.log('deleteName');
-      // console.log(index);
       // globalNames.splice(index, 1);
 
       // globalNames = globalNames.filter((name, i) => {
@@ -131,11 +129,6 @@ function render() {
 }
 
 // Clear input after submit
-// function clearInput() {
-//   inputName.value = '';
-//   inputName.focus();
-// }
-
 const clearInput = () => {
   inputName.value = '';
   inputName.focus();
