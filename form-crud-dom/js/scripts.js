@@ -131,7 +131,12 @@ function render() {
 }
 
 // Clear input after submit
-function clearInput() {
+// function clearInput() {
+//   inputName.value = '';
+//   inputName.focus();
+// }
+
+const clearInput = () => {
   inputName.value = '';
   inputName.focus();
-}
+};
