@@ -6,15 +6,13 @@ var isEditing = false;
 
 // Initializing correctly the page
 window.addEventListener('load', () => {
+  // Getting inputName and declaring other functions
   inputName = document.querySelector('#inputName');
 
   preventFormSubmit();
   activateInput();
   render();
 });
-
-// Getting inputName and declaring other functions
-function start() {}
 
 // Prevent submitting the input of the names
 function preventFormSubmit() {
