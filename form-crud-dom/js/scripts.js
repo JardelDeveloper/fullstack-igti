@@ -1,8 +1,8 @@
 // Definition of a global variable
-var globalNames = [];
-var inputName = null;
-var currentIndex = null;
-var isEditing = false;
+let globalNames = [];
+let inputName = null;
+let currentIndex = null;
+let isEditing = false;
 
 // Initializing correctly the page
 window.addEventListener('load', () => {
