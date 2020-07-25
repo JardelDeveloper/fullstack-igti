@@ -1,20 +1,20 @@
-// Initializing correctly the page
-window.addEventListener('load', start);
-
 // Definition of a global variable
 var globalNames = [];
 var inputName = null;
 var currentIndex = null;
 var isEditing = false;
 
-// Getting inputName and declaring other functions
-function start() {
+// Initializing correctly the page
+window.addEventListener('load', () => {
   inputName = document.querySelector('#inputName');
 
   preventFormSubmit();
   activateInput();
   render();
-}
+});
+
+// Getting inputName and declaring other functions
+function start() {}
 
 // Prevent submitting the input of the names
 function preventFormSubmit() {
