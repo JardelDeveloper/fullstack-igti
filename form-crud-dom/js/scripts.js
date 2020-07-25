@@ -69,7 +69,16 @@ function render() {
     function deleteName() {
       // console.log('deleteName');
       // console.log(index);
-      globalNames.splice(index, 1);
+      // globalNames.splice(index, 1);
+
+      globalNames = globalNames.filter((name, i) => {
+        if (i === index) {
+          return false;
+        } else {
+          return true;
+        }
+      });
+
       render();
     }
     var button = document.createElement('button');
