@@ -71,13 +71,15 @@ function render() {
       // console.log(index);
       // globalNames.splice(index, 1);
 
-      globalNames = globalNames.filter((name, i) => {
-        if (i === index) {
-          return false;
-        } else {
-          return true;
-        }
-      });
+      // globalNames = globalNames.filter((name, i) => {
+      //   if (i === index) {
+      //     return false;
+      //   } else {
+      //     return true;
+      //   }
+      // });
+
+      globalNames = globalNames.filter((_, i) => i !== index);
 
       render();
     }
