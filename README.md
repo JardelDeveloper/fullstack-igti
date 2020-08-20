@@ -20,7 +20,7 @@
 - Manipulating arrays with ES6+
 - Operator ...(rest/spread)
 - Destructuring
-- Refatorando o projeto do CRUD
+- Refactoring the CRUD Project
 - Asynchronous Programming
 - setTimeout and setInterval functions
 - HTTP Requests with Javascript
@@ -48,7 +48,7 @@ After the merge of your pull request is done, you can delete a branch of yours.
 
 # :wrench: Issues
 
-Feel free to **file a new issue** with a respective title and description on the the [Full stack - IGTI](https://github.com/JardelDeveloper/fullstack-igti/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**.
+Feel free to **file a new issue** with a respective title and description on the the [fullstack-igti](https://github.com/JardelDeveloper/fullstack-igti/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**.
 
 # :memo: License
 
